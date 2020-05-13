@@ -23,10 +23,10 @@ function add(scheme) {
   return db("schemes").insert(scheme, "id");
 }
 
-// async function addStep(step, scheme_id) {
-//   //   const steps = await findById(scheme_id);
-//   return db("steps").where({ scheme_id }).insert(step, "id");
-// }
+async function addStep(step, scheme_id) {
+  const obj = { ...step, scheme_id };
+  return db("steps").insert(obj, "id");
+}
 
 async function update(changes, idd) {
   const [id] = await db("schemes").where({ id: idd });
