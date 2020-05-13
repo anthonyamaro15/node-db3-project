@@ -1,6 +1,3 @@
-// Update with your config settings.
-// const connectionStr =
-//   process.env.DATABASE_URL || "postgres://localhost/schemes";
 module.exports = {
   development: {
     client: "pg",
