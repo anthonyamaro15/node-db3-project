@@ -9,7 +9,6 @@ module.exports = {
       directory: "./data/seeds",
     },
   },
-  /////
 
   production: {
     client: "pg",
