@@ -17,7 +17,6 @@ function findSteps(id) {
   // join steps as s
   // on sc.id = s.scheme_id
   // where s.scheme_id = 1;
-  ///
 }
 
 function add(scheme) {
